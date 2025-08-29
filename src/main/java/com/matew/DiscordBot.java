@@ -2,12 +2,12 @@ package com.matew;
 
 import org.slf4j.LoggerFactory;
 import com.matew.config.BotConfig;
+import com.matew.listeners.CommandListener;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
-import net.dv8tion.jda.api.interactions.commands.Command;
 
 import java.util.EnumSet;
 
@@ -30,7 +30,7 @@ public class DiscordBot {
                     .build();
             jda.awaitReady();
             logger.info("bot up and running");
-            
+
             registerCommands();
         } catch (Exception e) {
             logger.error("Error initializing JDA", e);
