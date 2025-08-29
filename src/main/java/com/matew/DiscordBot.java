@@ -49,7 +49,7 @@ public class DiscordBot {
                         Commands.slash("echo", "Echoes back your message.")
                                 .addOption(OptionType.STRING, "message", "The message to echo back", true))
                 .queue(
-                    success -> logger.info("Commands registered successfully."),
-                    error -> logger.error("Failed to register commands.", error));
+                        success -> logger.info("Commands registered successfully."),
+                        error -> logger.error("Failed to register commands.", error));
     }
 }
