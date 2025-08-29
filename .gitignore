@@ -1,2 +1,2 @@
 main/resources/config.properties
-target/classes/config.properties
+target/**/config.properties
