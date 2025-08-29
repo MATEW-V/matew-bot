@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class BotConfig {
   private static final org.slf4j.Logger logger = LoggerFactory.getLogger(BotConfig.class);
-  private static final String CONFIG_FILE = "config.properties";
+  private static final String CONFIG_FILE = ".gitignore";
   private static final Properties properties = new Properties();
 
   static {
