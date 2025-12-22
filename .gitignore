@@ -1,0 +1,12 @@
+.env
+
+data/
+*.json
+
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+
+discord.log
+
